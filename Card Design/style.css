@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #130f40;
+    
+}
+
+.container{
+    max-width:1100px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .card{
+    position:relative;
+    max-width: 300px;
+    height:400px;
+    background: #30336b;
+    margin:30px;
+}
+
+.container .card:hover{
+	border:2px solid #fff;
+}
+
+.container .card::before{
+    content:'';
+    position:absolute;
+    top:2px;
+    bottom:2px;
+    width:50%;
+    background-color:rgba(255,255,255,0.1);
+}
+
+.container .card .content{
+    padding:30px;
+    text-align:center;   
+    margin-top:90px;
+}
+
+.container .card .content h2{
+    position:absolute;
+    top:90px;
+    right:30px;
+    font-size:4em;
+    font-weight:800px;
+    color:#00a8ff;
+    z-index:1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.container .card:hover .content h2{
+    opacity:1;
+    top:30px;
+}
+
+.container .card .content h3{
+    position:relative;
+    font-size:1.5em;
+    color:#fff;
+    margin-bottom:10px;
+    opacity: 0.1;
+    transition:0.5s;
+}
+
+.container .card .content p{
+    position:relative;
+    font-size:17px;
+    font-weight:500;
+    color:#fff;
+    margin-bottom:10px;
+    opacity: 0.1;
+    transition:0.5s;
+}
+
+
+.container .card:hover .content h3,
+.container .card:hover .content p{
+    opacity: 1;
+}
+
+.container .card .content a{
+    display:inline-block;
+    padding:10px 25px;
+    text-decoration:none;
+    background-color:#fff;
+    margin-top:30px;
+    border-radius:5px;
+    color:#30336b;
+    cursor:pointer;
+    font-size:1em;
+    font-weight: bolder;
+    transition:0.1s;
+}
+
+.container .card .content a:hover{
+    padding:12px 45px;
+    font-size:1.3em;
+}
+
