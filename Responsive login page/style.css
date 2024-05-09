@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --mainColor: #6c63ff;
+    --demotxt: #b2bec3;
+    --inputWidth: 300px;
+    --inputheight: 50px;
+}
+
+body{
+    background-color: var(--mainColor);
+
+}
+
+.mainContainer{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+.container{
+    width:90vw;
+    height: 90vh;
+    background-color: white; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding-left: 50px;
+    border-radius: 10px;
+}
+
+.container h1{
+    margin-bottom: 10px;
+}
+
+
+
+.mainContainer .left_side{
+    width:30%;
+    height:90%;
+    background-color: whitesmoke;
+    box-shadow: 6px 5px 19px -8px rgba(0,0,0,0.48);
+   border-radius: 10px;
+}
+
+.mainContainer .left_side .info_field{
+    padding:30px;
+}
+
+.info_field span{
+    color: var(--demotxt);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.info_field a{
+    color: var(--mainColor);
+}
+
+.info_field p{
+    font-weight: 600;
+    margin: 10px 0 5px 0;
+}
+
+.info_field .inputField{
+    width:var(--inputWidth);
+    height: var(--inputheight);
+    border-radius: 5px;
+    color: var(--demotxt);
+    background-color: white;
+    padding: 20px;
+    font-size: 1rem;
+    
+}
+
+.info_field .inputField:focus{
+    border-color: var(--mainColor);
+}
+
+.info_field .pass{
+    margin: 20px 105px 5px 0; 
+    color:black; 
+    font-weight: 600;
+}
+
+.info_field .pass a{
+    color: var(--mainColor);
+}
+
+#chkbox{
+    border-radius: 5px;
+}
+
+label{
+    display: inline-block;
+    padding: 15px 0 15px 0;
+    color: var(--demotxt);
+    cursor: pointer;
+}
+
+.submit{
+    width:var(--inputWidth);
+    height: var(--inputheight);
+    background-color: var(--mainColor);
+    border:none;
+    color:white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition:0.5s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    border:3px solid var(--mainColor);
+    color:black;
+}
+
+.left_side .betweenLine{
+    margin-top: 20px;
+    color:var(--demotxt);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.buttonBox{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonBox > a{
+    text-decoration: none;
+}
+
+.btn{
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border: none;
+    background-color: white;
+    transition: 0.2s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+
+.googleBtn{
+    width:150px;
+    height: 50px;
+    color:#b25cfe;
+}
+
+.fbBtn{
+    width:150px;
+    height: 50px;
+    color: #538bff;
+}
+
+.right_sight img{
+    width:100%;
+    
+}
+
+@media screen and (max-width:900px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .mainContainer .left_side{
+        width:100%;
+        height:90%;
+    }
+
+    .mainContainer .right_sight img{
+        border-radius: 10px;
+    }
+
+} 
+
+
+@media screen and (max-width:900px) {
+    .mainContainer{
+        background-color: var(--mainColor);
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+    }
+    
+    .mainContainer .left_side{
+        width:90vw;
+        height:80%; 
+    }
+
+    .mainContainer img{
+        border-radius: 10%;
+    }
+
+    .left_side .inputField{
+        width:100%;
+    }
+    .submit{
+        width:100%;
+    }
+    
+    .info_field .pass{
+        margin: 20px 470px 5px 0; 
+        color:black; 
+        font-weight: 600;
+    }
+}
+
+
+
+
+
+
